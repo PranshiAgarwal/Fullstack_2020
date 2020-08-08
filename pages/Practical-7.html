@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            border: solid lightgrey;
+            padding: 5px;
+             width: 500px;  /* 100% */
+             height: 100%;
+            margin: 0px auto;
+            
+        }
+        #header{
+            background-color:gray;
+            height: 50px;
+            margin-bottom: 10px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+        #banner{
+         /*   width: 78%;  */
+            height: 250px;
+         /*   border: solid green; */
+            
+            background-color: skyblue;
+            margin-bottom: 10px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #section-1{
+         /*   background-color: slateblue; */
+         width: 100%;
+         margin: 5px auto;
+        }
+        #section-1::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            float: left;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3px;
+        }
+        #section-2{
+
+        }
+        #left-sidebar{
+            width: 48%;  
+            height: 190px;
+        /*    border: solid green; */
+            float: left;
+            background-color: plum;
+            margin-bottom: 5px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #right-sidebar{
+            width: 50%;
+            float: right;
+            margin-bottom: 5px;
+        }
+    /*    .artical {
+            background-color: red;
+        }  */
+        #p1{
+            background-color: brown;
+            height: 60px;
+            margin-bottom: 5px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #p2{
+            background-color: brown;
+            height: 60px;
+            margin-bottom: 5px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white; 
+        }
+        #p3{
+            background-color: brown;
+            height: 60px;
+            
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #card{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            
+        }
+
+        #k1{
+            background-color: yellow;
+            height: 100px;
+            width: 120px;
+            margin-right: 5px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #k2{
+            background-color: yellow;
+            height: 100px;
+            width: 120px;
+            margin-right: 5px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #k3{
+            background-color: yellow;
+            height: 100px;
+            width: 120px;
+            margin-right: 5px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #k4{
+            background-color: yellow;
+            height: 100px;
+            width: 120px;
+            display: flex;
+           justify-content: center; 
+            
+           align-items: center;   
+            font-size: 20px;
+            color: white;
+        }
+        #Footer{
+            background-color: blue;
+            height: 50px;
+            margin-bottom: 10px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+           Header
+        </div>
+        <div id="banner">
+            Banner
+            </div>
+            <div id="section-1"><h3 style="text-align: center;">Section-1</h3>
+           <div class="circle"></div>
+           <div class="circle"></div>
+           <div class="circle"></div>
+           <div class="circle"></div>
+            </div>
+            <div id="section-2"><h3 style="text-align: center;margin-bottom: 5px;margin-top: 5px;">Section-2</h3>
+                <div id="left-sidebar"> Main Content</div>
+                <div id="right-sidebar">
+                    <div class="artical" id="p1">Artical-1</div>
+                    <div class="artical" id="p2">Artical-2</div>
+                    <div class="artical" id="p3">Artical-3</div>
+                </div>
+            </div>
+        <div id="section-3"><h3 style="text-align: center; margin-bottom: 5px;">Section-3</h3>
+            <div id="card">
+               <div class="a1" id="k1">k1</div>
+               <div class="a1" id="k2">k2</div>
+               <div class="a1" id="k3">k3</div>
+               <div class="a1" id="k4">k4</div></div>
+        </div>
+             <div id="section-4"><h3 style="text-align: center; margin-bottom: 5px;">Section-4</h3>
+               <div id="Footer">Footer</div> 
+            </div>
+    </div>
+</body>
+</html>
