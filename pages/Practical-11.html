@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-11</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+        table{
+            text-align: left;
+            line-height: 20px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px solid #34495e;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        thead tr:first-child{
+            background: #34495e;
+            color: #fff;
+            border: none;
+            line-height: 40px;
+        }
+        thead tr th:last-child{
+            text-align: center;
+            line-height: 40px;
+        }
+        th:first-child,
+        td:first-child{
+            padding: 0 15px 0 20px;
+        }
+        th{
+            font-weight: bold;
+        }
+        thead tr:last-child th{
+            border-bottom: 3px solid #ddd;
+        }
+        tbody tr:hover{
+            background-color: #f2f2f2;
+            cursor: default;
+        }
+        tbody tr:last-child td{
+            border: none;
+        }
+        tbody tr td:nth-child(1){
+            width: 50px;
+        }
+        tbody tr td:nth-child(2){
+            width: 500px;
+            padding-right: 10px;
+        }
+        tbody tr td:nth-child(3){
+            padding-left: 10px;
+            /* width: 500px; */
+
+        }
+        tbody td{
+            border-bottom: 1px solid #ddd;
+            height: 50px;
+        }
+        td:last-child{
+            text-align: center;
+        }
+        .edit:hover{
+            color: royalblue;
+            cursor: pointer;
+        }
+        .delete:hover{
+            color: #dc2a2a;
+            cursor: pointer;
+        }
+        td.deliver{
+            color: green;
+        }
+        td.pending{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <thead>
+       <tr>
+           <th colspan="5">Fullstack Live Practical Book</th>
+       </tr>
+       <tr>
+           <th>#</th>
+           <th>Practical Name</th>
+           <th style="padding-left: 18px;">Link</th>
+           <th>Status</th>
+           <th>Tools</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Create a Web page including HTML basic skeleton using Official HTML Editor and Online Sandbox Environment </td>
+            <td class="deliver">
+                <a href="../pages/Practical-1.html">Practical-1</a>
+            </td>
+            <td class="deliver">Checked</td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit</i>
+                <i title="Delete" class="material-icons button delete"> delete</i>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Live your First Web-Page on Git-Hub.</td>
+            <td class="deliver">
+                <a href="../pages/Practical-2.html">Practical-2</a>
+            </td>
+            <td class="deliver">Checked</td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit</i>
+                <i title="Delete" class="material-icons button delete"> delete</i>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Create a Web page showing a basic html structure using Character Entities and Span Tag </td>
+            <td class="deliver">
+                <a href="../pages/Practical-3.html">Practical-3</a>
+            </td>
+            <td class="deliver">Checked</td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit</i>
+                <i title="Delete" class="material-icons button delete"> delete</i>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Create a Website having list of all practical and their individuals practical page links</td>
+            <td class="deliver">
+                <a href="../pages/Practical-4.html">Practical-4</a>
+            </td>
+            <td class="deliver">Checked</td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit</i>
+                <i title="Delete" class="material-icons button delete"> delete</i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
