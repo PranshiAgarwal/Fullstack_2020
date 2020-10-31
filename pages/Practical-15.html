@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Counter</title>
+    <link rel="stylesheet" href="counter_style.css">
+</head>
+<body>
+    <button id="sub">-</button>
+    <input type="text" id="qtyBox" readonly="" value="0">
+    <button id="add">+</button>
+    <script>
+        var addBtn = document.querySelector('#add');
+        var subBtn = document.querySelector('#sub');
+        var qty = document.querySelector('#qtyBox');
+        addBtn.addEventListener('click',()=>{
+            qty.value = parseInt(qty.value) + 1;
+        });
+
+              subBtn.addEventListener('click',()=>{
+                 if(qty.value<=0){
+                     qty.value=0;
+                 }
+                 else{
+                    qty.value = parseInt(qty.value) - 1;
+
+                 }
+        }); 
+    </script>
+</body>
+</html>
